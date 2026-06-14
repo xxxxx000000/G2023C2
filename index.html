@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>音乐合辑</title>
+    <link rel="stylesheet" href="css/password.css">
+</head>
+<body>
+    <div class="bg-layer" id="bgLayer" aria-hidden="true"></div>
+    <div class="overlay" aria-hidden="true"></div>
+    <div class="main-container">
+        <div class="password-card">
+            <p class="title">🎓毕业音乐合辑🎵</p>
+            <p class="subtitle">密码提示：毕业时间~</p>
+            <p class="message" id="message"></p>
+            <div class="dots-row" id="dotsRow">
+                <span class="dot" data-index="0"></span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+                <span class="dot" data-index="3"></span>
+                <span class="dot" data-index="4"></span>
+                <span class="dot" data-index="5"></span>
+            </div>
+            <div class="keypad" id="keypad">
+                <button class="key-btn digit-btn" data-digit="1" aria-label="1">1</button>
+                <button class="key-btn digit-btn" data-digit="2" aria-label="2">2</button>
+                <button class="key-btn digit-btn" data-digit="3" aria-label="3">3</button>
+                <button class="key-btn digit-btn" data-digit="4" aria-label="4">4</button>
+                <button class="key-btn digit-btn" data-digit="5" aria-label="5">5</button>
+                <button class="key-btn digit-btn" data-digit="6" aria-label="6">6</button>
+                <button class="key-btn digit-btn" data-digit="7" aria-label="7">7</button>
+                <button class="key-btn digit-btn" data-digit="8" aria-label="8">8</button>
+                <button class="key-btn digit-btn" data-digit="9" aria-label="9">9</button>
+                <button class="key-btn func-btn" id="btnDelete" aria-label="删除">⌫</button>
+                <button class="key-btn digit-btn" data-digit="0" aria-label="0">0</button>
+                <button class="key-btn func-btn" id="btnConfirm" aria-label="确认">✓</button>
+            </div>
+        </div>
+    </div>
+    <script src="js/password.js"></script>
+</body>
+</html>

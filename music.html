@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>音乐合辑</title>
+    <link rel="stylesheet" href="css/music.css">
+</head>
+<body>
+    <div class="bg-layer" id="bgLayer" aria-hidden="true"></div>
+    <div class="overlay" aria-hidden="true"></div>
+
+    <div class="music-panel" id="musicPanel">
+        <div class="panel-header">
+            <h1 class="panel-title">🎓 毕业音乐合辑🎵</h1>
+        </div>
+        <div class="panel-body">
+            <div class="song-list" id="songList"></div>
+            <div class="song-preview" id="songPreview">
+                <div class="preview-placeholder">请选择一首歌曲</div>
+                <div class="preview-info" id="previewInfo" style="display:none;">
+                    <div class="preview-title" id="previewTitle"></div>
+                    <div class="preview-artist" id="previewArtist"></div>
+                    <div class="progress-container" id="progressContainer">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                    <button class="play-btn" id="playBtn">▶ 播放</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/music.js"></script>
+</body>
+</html>
